@@ -13,8 +13,8 @@ public class InformationCollector {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    private String from;
-    private String to;
+    private String currencyFrom;
+    private String currencyTo;
     private BigDecimal quantity;
     private BigDecimal conversionMultiple;
     private BigDecimal totalCalculatedAmount;
@@ -26,9 +26,9 @@ public class InformationCollector {
     }
 
 
-    public InformationCollector(String from, String to, BigDecimal quantity, BigDecimal conversionMultiple, BigDecimal totalCalculatedAmount, String environment) {
-        this.from = from;
-        this.to = to;
+    public InformationCollector(String currencyFrom, String currencyTo, BigDecimal quantity, BigDecimal conversionMultiple, BigDecimal totalCalculatedAmount, String environment) {
+        this.currencyFrom = currencyFrom;
+        this.currencyTo = currencyTo;
         this.quantity = quantity;
         this.conversionMultiple = conversionMultiple;
         this.totalCalculatedAmount = totalCalculatedAmount;
@@ -46,19 +46,19 @@ public class InformationCollector {
     }
 
     public String getFrom() {
-        return this.from;
+        return this.currencyFrom;
     }
 
-    public void setFrom(String from) {
-        this.from = from;
+    public void setFrom(String currencyFrom) {
+        this.currencyFrom = currencyFrom;
     }
 
     public String getTo() {
-        return this.to;
+        return this.currencyTo;
     }
 
-    public void setTo(String to) {
-        this.to = to;
+    public void setTo(String currencyTo) {
+        this.currencyTo = currencyTo;
     }
 
     public BigDecimal getQuantity() {
