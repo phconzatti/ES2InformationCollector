@@ -26,8 +26,7 @@ public class InformationCollector {
     }
 
 
-    public InformationCollector(long id, String from, String to, BigDecimal quantity, BigDecimal conversionMultiple, BigDecimal totalCalculatedAmount, String environment) {
-        this.id = id;
+    public InformationCollector(String from, String to, BigDecimal quantity, BigDecimal conversionMultiple, BigDecimal totalCalculatedAmount, String environment) {
         this.from = from;
         this.to = to;
         this.quantity = quantity;
